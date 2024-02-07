@@ -34,7 +34,6 @@ library("Metrics")
 
 all_saving_paths <- function(top_file_dir,this_bug){
   ###########
-  # example all_saving_paths("/Users/vivianhuang/Desktop/R-modeling-scripts/r_chagasM/output/","San")
   # top_file_dir: the directory to save all the output files
   # this_bug: specify which bug we are interested at, choose from: Dim, Ger, Ind, Lec, Lon, Max, Mex, Neo, Pro, Rec, Rub, San
   # return: a stack specify all the paths to save output files under top_file_dir
@@ -367,9 +366,9 @@ process_raster_spatially <- function(raster_stack_path, pca_model, clim_type_nam
 
 this_bug = 'San'
 number_replicate = 10 
-top_file_dir = "/Users/liting/Documents/GitHub/r_chagasM/output/kfold_process" # where to save all the output
-input_file_dir <-"/Users/liting/Documents/GitHub/r_chagasM" # directory to search for input files
-clim_dir <- "/Users/liting/Documents/data/resample_mask/historical/" # directory to find historical climate data, all the rasters (ends with .tif) under this directory will be considered as inputs
+top_file_dir = "/Users/something.../Project/kfold_process" # where to save all the output
+input_file_dir <-"/Users/something.../Project/" # directory to search for input files
+clim_dir <- "/Users/something.../resample_mask/historical/" # directory to find historical climate data, all the rasters (ends with .tif) under this directory will be considered as inputs
 
 ########################################
 # all the saving paths                 #
